@@ -1,5 +1,7 @@
 import React from "react";
 
+/* this is a test
+*/
 export default function About() {
     return (
         <section id = "about">
