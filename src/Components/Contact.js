@@ -1,5 +1,3 @@
-// src/components/Contact.js
-
 import React from "react";
 
 export default function Contact() {
@@ -9,9 +7,7 @@ export default function Contact() {
 
   function encode(data) {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
   }
 
@@ -22,7 +18,10 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => {
+        alert("Message sent!");
+        window.location.reload(); // Reload the page
+      })
       .catch((error) => alert(error));
   }
 
@@ -46,7 +45,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
+              <p className="mt-1 text-gray-400">
                 97 Warren St. <br />
                 New York, NY 10007
               </p>
@@ -56,7 +55,7 @@ export default function Contact() {
                 EMAIL
               </h2>
               <a className="text-indigo-400 leading-relaxed">
-                reedbarger@email.com
+                your-email@example.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
@@ -74,9 +73,8 @@ export default function Contact() {
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+          <p className="leading-relaxed mb-5 text-gray-400">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum suscipit officia aspernatur veritatis. Asperiores, aliquid?
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -86,8 +84,9 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={name}
               onChange={(e) => setName(e.target.value)}
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -98,23 +97,22 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-400"
-            >
+            <label htmlFor="message" className="leading-7 text-sm text-gray-400">
               Message
             </label>
             <textarea
               id="message"
               name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
-            />
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            ></textarea>
           </div>
           <button
             type="submit"
