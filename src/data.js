@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Steam Sales Project",
+    subtitle: "Javascript, React, CSS, HTML",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+      "Steam Sales Project is a dynamic application that retrieves data from a Steam API, including game names, prices, and more, to create an up-to-date list of Steam games currently on sale. The project combines this information to provide users with an easy-to-browse catalog of discounted games, allowing them to discover and take advantage of the latest Steam deals.",
+    image: "./WebsiteUnderConstruction.gif",
+    link: "https://github.com/rollinsk1/Steam-Sales-Project",
   },
   {
     title: "React Tracks",
@@ -33,28 +33,11 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
-];
-
 export const skills = [
   "JavaScript",
   "Java",
   "React",
   "Next.js",
-  "Node",
+  "Python",
   "GraphQL",
 ];
