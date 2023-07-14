@@ -9,9 +9,9 @@ export const projects = [
   },
   {
     title: "The Busy Bean",
-    subtitle: "",
+    subtitle: "PHP, CSS, HTML, SQL, PHPMYADMIN",
     description:
-      "This project involved creating a custom e-commerce website tailored to specialty coffee shops. The goal was to provide a user-friendly interface for customers interested in purchasing coffee products. The website allows customers to create accounts, search for coffee products, and make purchases",
+      "The Busy Bean is a custom e-commerce website for specialty coffee buying. It features a user-friendly interface, account creation, product search, and secure purchases. Built with PHP, MySQL, and phpMyAdmin, it stores coffee products in a database. Admin panel with dashboard included. All of this information is combined within a database using phpmyAdmin and MySQL.",
     image: "./resize_image9.png",
     link: "https://github.com/rollinsk1/The-Busy-Bean",
   },
