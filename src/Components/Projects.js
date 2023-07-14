@@ -20,7 +20,7 @@ export default function Projects() {
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-full p-4"
+              className="sm:flex w-full p-4"
               style={{ aspectRatio: "16/9" }}
             >
               <div className="flex relative">
