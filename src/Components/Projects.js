@@ -11,9 +11,8 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Loren Ispum. SOmething Something Words Something Something Yep
-            Projects Yep SOmething Something
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-center">
+          This section showcases a collection of diverse and innovative applications developed by me. Each app represents my skills in JavaScript, React, CSS, Python, and other relevant technologies. These apps demonstrate my ability to create user-friendly interfaces and deliver unique functionality. Explore the projects to get a glimpse of my coding expertise and passion for building impactful applications.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -21,7 +20,7 @@ export default function Projects() {
             <a
               href={project.link}
               key={project.image}
-              className="sm:flex w-full p-10"
+              className="sm:w-1/2 w-full p-4"
               style={{ aspectRatio: "16/9" }}
             >
               <div className="flex relative">
