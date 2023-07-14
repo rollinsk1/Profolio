@@ -8,12 +8,12 @@ export const projects = [
     link: "https://github.com/rollinsk1/Steam-Sales-Project",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "The Busy Bean",
+    subtitle: "",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+      "This project involved creating a custom e-commerce website tailored to specialty coffee shops. The goal was to provide a user-friendly interface for customers interested in purchasing coffee products. The website allows customers to create accounts, search for coffee products, and make purchases",
+    image: "./resize_image9.png",
+    link: "https://github.com/rollinsk1/The-Busy-Bean",
   },
   {
     title: "DevChat",
@@ -37,7 +37,7 @@ export const skills = [
   "JavaScript",
   "Java",
   "React",
-  "Next.js",
+  "SQL",
   "Python",
   "GraphQL",
 ];

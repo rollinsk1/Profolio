@@ -21,7 +21,8 @@ export default function Projects() {
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4"
+              className="sm:flex w-full p-4"
+              style={{ aspectRatio: "16/9" }}
             >
               <div className="flex relative">
                 <img
@@ -36,7 +37,9 @@ export default function Projects() {
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-loose">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </a>
