@@ -16,12 +16,12 @@ export const projects = [
     link: "https://github.com/rollinsk1/The-Busy-Bean",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "AI Snake Game",
+    subtitle: "Python, Pygame, Torch, Numpy",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "This AI-powered Snake Game uses Reinforcement Learning and a Neural Network. The Agent class defines snake behavior and interactions with the game board. The game loop updates the game state, and play_step() performs one game step. Agent.py and game.py are the main files for training and running the game.",
     image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/rollinsk1/AI_SnakeGame_Project",
   },
 ];
 
