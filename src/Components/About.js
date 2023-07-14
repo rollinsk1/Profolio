@@ -9,10 +9,10 @@ export default function About() {
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                         Hi, I'm Kevin
-                        <br className="hidden lg:inline-block" /> I love to build functional Applications.
+                        <br className="hidden lg:inline-block" />
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        Something Somethign Something words Loren Something somethings Something
+                    Welcome to my portfolio! I'm passionate about creating unique digital experiences that leave a lasting impact. With a strong background in web development, I specialize in building responsive and user-friendly websites. My creative approach combined with technical expertise allows me to craft visually stunning designs that engage and captivate users. Whether it's developing dynamic applications or designing intuitive interfaces, I strive to deliver exceptional results. Join me on this journey as we bring ideas to life and shape the digital landscape together. Let's create something extraordinary.
                     </p>
                     <div className="flex justify-center">
                         <a
