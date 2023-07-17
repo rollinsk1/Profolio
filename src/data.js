@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "Python, Pygame, Torch, Numpy",
     description:
       "This AI-powered Snake Game uses Reinforcement Learning and a Neural Network. The Agent class defines snake behavior and interactions with the game board. The game loop updates the game state, and play_step() performs one game step. Agent.py and game.py are the main files for training and running the game.",
-    image: "./project-3.gif",
+    image: "./plswork.gif",
     link: "https://github.com/rollinsk1/AI_SnakeGame_Project",
   },
 ];
